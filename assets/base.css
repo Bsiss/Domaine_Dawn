@@ -3595,3 +3595,12 @@ details-disclosure > details {
     transform: translateX(100%) scaleX(0);
   }
 }
+
+
+/* Minor Custom Styling for product card display */
+
+.card--standard>.card__content .card__information {
+    padding-left: 0;
+    padding-right: 0;
+    display: flow;
+}
