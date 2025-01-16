@@ -39,7 +39,8 @@
     endif
   -%}
 
-{% if product.variants[forloop.index0].metafields.color.values and option.name == 'Color' %}
+  {%- capture input_id -%}
+    {% if product.variants[forloop.index0].metafields.color.values and option.name == 'Color' %}
   <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" class="swatch-label">
 <span style="background-color: {{product.variants[forloop.index0].metafields.color.values}}; " class="swatch-color-ball"></span> <span class="swatch-color-name">{{ value | escape }}</span>
 <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
@@ -50,7 +51,22 @@
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>
 {% endif %}
-  
+  {%- endcapture -%}
+
+  {%- capture input_name -%}
+    {{ option.name }}-{{ option.position }}
+  {%- endcapture -%}
+
+  {%- capture input_dataset -%}
+    data-product-url="{{ value.product_url }}"
+    data-option-value-id="{{ value.id }}"
+  {%- endcapture -%}
+
+  {%- capture label_unavailable -%}
+    <span class="visually-hidden label-unavailable">
+      {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
+    </span>
+  {%- endcapture -%}
 
   {%- if picker_type == 'swatch' -%}
     {%- capture help_text -%}
