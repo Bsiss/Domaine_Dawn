@@ -3612,3 +3612,24 @@ details-disclosure > details {
 }
 
 /* product swatch */
+.product-swatches {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.swatch {
+  width: 24px; /* Diameter of the circle */
+  height: 24px;
+  border-radius: 50%; /* Makes it a circle */
+  border: 1px solid #ddd; /* Optional border */
+  cursor: pointer;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  transition: border-color 0.3s ease;
+}
+
+.swatch:hover {
+  border-color: #000; /* Highlight on hover */
+}
