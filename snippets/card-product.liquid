@@ -124,7 +124,20 @@
               </a>
             </h3>
 
-            
+            <div class="product-swatches">
+  {% for variant in card_product.variants %}
+    {% if variant.available and variant.featured_image %}
+      <div
+        class="swatch"
+        style="background-color: {{ variant.option1 | handleize | color_to_hex }};"
+        data-variant-id="{{ variant.id }}"
+        data-variant-image="{{ variant.featured_image | image_url: width: 533 }}"
+        title="{{ variant.option1 }}"
+      ></div>
+    {% endif %}
+  {% endfor %}
+</div>
+
           </div>
           <div class="card__badge {{ settings.badge_position }}">
             {%- if card_product.available == false -%}
