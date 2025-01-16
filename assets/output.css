@@ -584,12 +584,9 @@ video {
     --tw-text-opacity: 1;
     color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
     font-weight: 600;
+    margin-top: 2px !important;
+    margin-bottom: -10px !important;
 } 
-
-.card__heading {
-    margin-top: 10px;
-    margin-bottom: -4px;
-}
 
 .text-black.text-xs.font-normal {
     font-size: small;
