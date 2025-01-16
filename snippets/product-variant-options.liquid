@@ -20,7 +20,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 test
-{%- for value in option.values -%}
+<!-- {%- for value in option.values -%}
   {%- liquid
     assign swatch_focal_point = null
     if value.swatch.image
@@ -114,6 +114,6 @@ test
       {%- else -%}
         {{- value -}}
       {%- endif %}
-    </option>
+    </option> -->
   {%- endif -%}
 {%- endfor -%}
