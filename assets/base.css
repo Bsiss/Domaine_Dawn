@@ -3605,7 +3605,7 @@ details-disclosure > details {
 }
 
 .card__badge {
-    align-self: baseline;
+    align-self: baseline !important;
     grid-row-start: 1;
     justify-self: flex-start;
 }
