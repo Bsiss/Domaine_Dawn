@@ -3611,5 +3611,9 @@ details-disclosure > details {
     justify-self: flex-start;
 }
 
+span.price-item.price-item--sale.price-item--last {
+    color: red;
+}
+
 /* product swatch */
 
