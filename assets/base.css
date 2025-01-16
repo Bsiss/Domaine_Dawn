@@ -3615,5 +3615,11 @@ span.price-item.price-item--sale.price-item--last {
     color: red;
 }
 
+.price--on-sale .price-item--regular {
+    text-decoration: line-through;
+    color: black;
+    font-size: 1.3rem;
+}
+
 /* product swatch */
 
