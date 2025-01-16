@@ -584,3 +584,7 @@ video {
     --tw-text-opacity: 1;
     color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
 } 
+
+.text-black.text-xs.font-normal {
+    font-size: small;
+}
