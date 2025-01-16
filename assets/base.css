@@ -3612,20 +3612,3 @@ details-disclosure > details {
 }
 
 /* product swatch */
-.product-swatches {
-  display: flex;
-  gap: 8px;
-  margin-top: 10px;
-}
-
-.swatch {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid #ddd;
-  cursor: pointer;
-}
-
-.swatch:hover {
-  border-color: #000;
-}
