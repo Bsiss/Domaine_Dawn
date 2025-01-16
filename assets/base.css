@@ -3606,6 +3606,6 @@ details-disclosure > details {
 
 .card__badge {
     align-self: baseline !important;
-    grid-row-start: 1;
+    grid-row-start: auto !important;
     justify-self: flex-start;
 }
