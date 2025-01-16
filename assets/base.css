@@ -2917,18 +2917,19 @@ details-disclosure > details {
 }
 
 .badge {
-  border: 1px solid transparent;
-  border-radius: var(--badge-corner-radius);
-  display: inline-block;
-  font-size: 1.2rem;
-  letter-spacing: 0.1rem;
-  line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
-  text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-badge-foreground));
-  word-break: break-word;
+    border-radius: var(--badge-corner-radius);
+    display: inline-block;
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    line-height: 1;
+    padding: .5rem 1.3rem .6rem;
+    text-align: center;
+    /* background-color: rgb(var(--color-badge-background)); */
+    background-color: transparent;
+    border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
+    color: red;
+    word-break: break-word;
+    border: red 1px solid;
 }
 
 .gradient {
