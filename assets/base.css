@@ -3599,6 +3599,7 @@ details-disclosure > details {
 
 /* Minor Custom Styling for product card display */
 
+/* Change/reverse the orientation of Vendor and Product Title as shown on the provided Figma mockup */
 .card--standard>.card__content .card__information {
     padding-left: 0;
     padding-right: 0;
