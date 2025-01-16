@@ -580,7 +580,7 @@ video {
 
 /* styling Dawn with Tailwind CSS */
 
-.card__heading h5 {
+/* .card__heading {
     --tw-text-opacity: 1;
     color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
-}
+} */
