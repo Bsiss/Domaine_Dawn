@@ -92,9 +92,6 @@
                 {% endif %}
                 class="full-unstyled-link"
               >
-                <p class="text-blue-900 text-lg mt-4">
-    This is an example of using the <code>text-blue-900</code> class in Tailwind CSS.
-  </p>
                 {%- if card_collection.title != blank -%}
                   {{- card_collection.title | escape -}}
                 {%- else -%}
@@ -118,6 +115,9 @@
           </div>
         </div>
       {%- endif -%}
+      <p class="text-blue-900 text-lg mt-4">
+    This is an example of using the <code>text-blue-900</code> class in Tailwind CSS.
+  </p>
     </div>
     {%- if card_collection != blank and card_style == 'card' or card_collection.featured_image -%}
       <div class="card__content">
