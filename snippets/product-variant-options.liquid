@@ -20,7 +20,7 @@
   assign product_form_id = 'product-form-' | append: section.id
 -%}
 test
-<!-- {%- for value in option.values -%}
+{%- for value in option.values -%}
   {%- liquid
     assign swatch_focal_point = null
     if value.swatch.image
@@ -56,16 +56,7 @@ test
     <span class="visually-hidden label-unavailable">
       {{- 'products.product.variant_sold_out_or_unavailable' | t -}}
     </span>
-  {%- endcapture -%} -->
-
-  {% if product.variants[forloop.index0].metafields.color.values and option.name == 'Color' %}
-  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" style="background-color: {{product.variants[forloop.index0].metafields.color.values}}"> 
-  </label>
-{% else %}
-  <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-    {{ value }}
-  </label>
-{% endif %}
+  {%- endcapture -%}
   {%- if picker_type == 'swatch' -%}
     {%- capture help_text -%}
       <span class="visually-hidden">{{ value | escape }}</span>
