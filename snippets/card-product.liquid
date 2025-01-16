@@ -155,6 +155,58 @@
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
           >
+
+            <!-- swatch start -->
+        <div class="product-swatches">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+      <div class="swatch" 
+           style="background-color: {{ variant.options | first | downcase | color_to_hex }}" 
+           data-variant-id="{{ variant.id }}" 
+           data-variant-image="{{ variant.featured_image | img_url: '300x300' }}">
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+        <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    // Hover functionality for variant swatches
+    document.querySelectorAll(".swatch").forEach(swatch => {
+        swatch.addEventListener("mouseover", function () {
+            const productCard = this.closest(".product-card");
+            const variantImage = this.getAttribute("data-variant-image");
+
+            // Change product image to variant image on hover
+            if (productCard && variantImage) {
+                const mainImage = productCard.querySelector(".product-image");
+                if (mainImage) {
+                    mainImage.src = variantImage;
+                }
+            }
+        });
+    });
+
+    // Hover functionality for secondary image
+    document.querySelectorAll(".product-card").forEach(card => {
+        const mainImage = card.querySelector(".product-image");
+        const secondaryImage = card.querySelector(".product-secondary-image");
+
+        if (mainImage && secondaryImage) {
+            const defaultImage = mainImage.src;
+
+            card.addEventListener("mouseover", function () {
+                mainImage.src = secondaryImage.src;
+            });
+
+            card.addEventListener("mouseout", function () {
+                mainImage.src = defaultImage;
+            });
+        }
+    });
+});
+
+        </script>
             <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
