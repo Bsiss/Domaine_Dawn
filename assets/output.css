@@ -588,7 +588,7 @@ video {
 
 .card__heading {
     margin-top: 8px;
-    margin-bottom: -8px;
+    margin-bottom: -4px;
 }
 
 .text-black.text-xs.font-normal {
