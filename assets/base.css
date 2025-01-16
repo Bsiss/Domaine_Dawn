@@ -3613,24 +3613,19 @@ details-disclosure > details {
 
 /* product swatch */
 .product-swatches {
-    display: flex;
-    gap: 8px;
-    margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
 }
 
 .swatch {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .swatch:hover {
-    border-color: #000;
+  border-color: #000;
 }
-
-.product-card img.product-image {
-    transition: opacity 0.3s ease-in-out;
-}
-
