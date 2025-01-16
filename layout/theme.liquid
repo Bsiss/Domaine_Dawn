@@ -375,33 +375,7 @@
     {%- endif -%}
 
     <script>
-
-      document.addEventListener("DOMContentLoaded", function () {
-  // Handle swatch hover to update product image
-  document.querySelectorAll(".swatch").forEach(swatch => {
-    swatch.addEventListener("mouseover", function () {
-      const productCard = this.closest(".product-card");
-      const variantImage = this.getAttribute("data-variant-image");
-
-      if (productCard && variantImage) {
-        const mainImage = productCard.querySelector(".card__media img");
-        if (mainImage) {
-          mainImage.src = variantImage;
-        }
-      }
-    });
-
-    swatch.addEventListener("mouseout", function () {
-      const productCard = this.closest(".product-card");
-      const defaultImage = productCard.querySelector(".card__media img").getAttribute("data-default-image");
-
-      if (productCard && defaultImage) {
-        productCard.querySelector(".card__media img").src = defaultImage;
-      }
-    });
-  });
-});
-
+      
     </script>
   </body>
 </html>
