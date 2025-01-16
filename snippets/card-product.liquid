@@ -144,6 +144,21 @@
         </div>
       </div>
       <div class="card__content">
+        <!-- swatch start -->
+        <div class="product-swatches">
+  {% for variant in product.variants %}
+    {% if variant.available %}
+      <div class="swatch" 
+           style="background-color: {{ variant.options | first | downcase | color_to_hex }}" 
+           data-variant-id="{{ variant.id }}" 
+           data-variant-image="{{ variant.featured_image | img_url: '300x300' }}">
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
+
+        <!-- swatch end -->
         <div class="card__information">
           {% if card_product.vendor %}
             <span class="visually-hidden text-black text-sm font-normal">{{ 'accessibility.vendor' | t }}</span>
