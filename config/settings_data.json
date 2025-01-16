@@ -136,6 +136,13 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "1579591383489211490": {
+        "type": "shopify://apps/vario/blocks/app-embed/622e8656-34ee-4cb0-92c3-60ea95cfc0b8",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {
