@@ -585,6 +585,11 @@ video {
     color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
 } 
 
+.card__heading {
+    margin-top: 8px;
+    margin-bottom: -8px;
+}
+
 .text-black.text-xs.font-normal {
     font-size: small;
 }
