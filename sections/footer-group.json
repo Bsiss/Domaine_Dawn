@@ -25,7 +25,7 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Domaine x Shopify",
+            "heading": "<strong>Domaine x Shopify</strong>",
             "subtext": "<h2>building unified commerce solutions for every channel.</h2>"
           }
         }
