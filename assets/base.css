@@ -3632,45 +3632,38 @@ span.price-item.price-item--sale.price-item--last {
 }
 
 
-/* Fix for mobile product carousel in Dawn theme */
+/* Fix for stacked product carousel on mobile */
 @media screen and (max-width: 768px) {
   .product-carousel {
     display: flex;
+    flex-wrap: nowrap; /* Prevent items from stacking */
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
-    gap: 16px; /* Adjust spacing between slides if needed */
+    gap: 16px; /* Adjust spacing as needed */
   }
 
   .product-carousel__item {
-    flex: 0 0 auto;
-    scroll-snap-align: start;
-    width: calc(80% - 16px); /* Adjust width of slides if needed */
-    margin-right: 16px; /* Match gap to prevent layout break */
+    flex: 0 0 auto; /* Ensure each item stays side by side */
+    width: calc(80% - 16px); /* Adjust width for mobile view */
+    scroll-snap-align: center; /* Align items centrally */
   }
 
-  .product-carousel__item:last-child {
-    margin-right: 0;
+  /* Prevent stacking of images within carousel items */
+  .product-carousel__item img {
+    width: 100%; /* Ensure images are responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline gaps */
   }
 
-  /* Prevent text or elements from overflowing */
-  .product-carousel__item * {
-    max-width: 100%;
-    box-sizing: border-box;
-  }
-
-  /* Optional: Add custom scrollbar styling */
+  /* Hide scrollbar for a cleaner look (optional) */
   .product-carousel::-webkit-scrollbar {
-    height: 8px;
+    display: none;
   }
 
-  .product-carousel::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4px;
-  }
-
-  .product-carousel::-webkit-scrollbar-track {
-    background-color: rgba(0, 0, 0, 0.1);
+  .product-carousel {
+    -ms-overflow-style: none; /* Internet Explorer */
+    scrollbar-width: none; /* Firefox */
   }
 }
 
