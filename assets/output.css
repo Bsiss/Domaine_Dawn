@@ -588,6 +588,11 @@ video {
     margin-bottom: -10px !important;
 } 
 
+span.price-item.price-item--sale {
+    font-size: 1.3rem;
+    color: red;
+}
+
 .text-black.text-xs.font-normal {
     font-size: small;
 }
