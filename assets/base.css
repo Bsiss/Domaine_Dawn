@@ -3631,6 +3631,13 @@ span.price-item.price-item--sale.price-item--last {
     margin-top: 10px;
 }
 
+.card-wrapper {
+    color: inherit;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+    margin-bottom: 2.6rem;
+}
 
 /* Mobile carousel optimize */
 @media screen and (max-width: 768px) {
