@@ -3632,3 +3632,11 @@ span.price-item.price-item--sale.price-item--last {
 }
 
 
+/* Mobile carousel optimize */
+@media screen and (max-width: 768px) {
+.grid {
+  display: inline-flex !important
+;
+}
+}
+
