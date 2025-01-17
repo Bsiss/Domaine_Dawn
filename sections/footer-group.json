@@ -16,6 +16,7 @@
       "blocks": {
         "footer-0": {
           "type": "link_list",
+          "disabled": true,
           "settings": {
             "heading": "Quick links",
             "menu": "footer"
@@ -24,8 +25,8 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.</p>"
+            "heading": "Domaine x Shopify",
+            "subtext": "<h2>building unified commerce solutions for every channel.</h2>"
           }
         }
       },
