@@ -3627,3 +3627,7 @@ span.price-item.price-item--sale.price-item--last {
     padding: 0px !important;
 }
 
+.card-information {
+    margin-top: 10px;
+}
+
