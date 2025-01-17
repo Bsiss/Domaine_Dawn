@@ -122,7 +122,7 @@
     "custom_liquid_zTLKzk": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    // Find all elements containing \"Sale\"\n    document.querySelectorAll('.badge--sale, .some-other-class').forEach(function (element) {\n      if (element.textContent.trim() === \"Sale\") {\n        element.textContent = \"On Sale\";\n      }\n    });\n  });\n</script>",
+        "custom_liquid": "",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
