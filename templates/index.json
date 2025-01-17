@@ -89,6 +89,9 @@
     },
     "featured_collection_fgcqqX": {
       "type": "featured-collection",
+      "custom_css": [
+        ".grid {display: flex;}"
+      ],
       "settings": {
         "title": "Featured collection",
         "heading_size": "h1",
