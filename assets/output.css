@@ -582,7 +582,7 @@ video {
 
  .card__heading {
     --tw-text-opacity: 1;
-    color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
+    color: #00639c !important;
     font-weight: 600;
     margin-top: 2px !important;
     margin-bottom: -10px !important;
