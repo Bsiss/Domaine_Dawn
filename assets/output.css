@@ -584,8 +584,8 @@ video {
     --tw-text-opacity: 1;
     color: rgba(30, 58, 138, var(--tw-text-opacity)) !important;
     font-weight: 600;
-    /* margin-top: 2px !important;
-    margin-bottom: -10px !important; */
+    margin-top: 2px !important;
+    margin-bottom: -10px !important;
 } 
 
 .text-black.text-xs.font-normal {
